@@ -2,18 +2,18 @@
 
 @section('main-content')
 <div class="comics-wrapper">
-    <section class="comics-section container pt-5 d-flex flex-column align-items-center">
+    <section class="comics-section container pt-4 d-flex justify-content-center">
         <div class="row">
 
-            <div class="col-6 d-flex align-items-stretch pb-4">
+            <div class="col-12 p-4">
                 <div class="card border-0" style="width: 100%;">
                     <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
                     <p class="card-text text-uppercase text-white pt-2"> {{$comic['title']}} </p>
+                    <p class="card-text text-uppercase text-white pt-2"> {{$comic['price']}} </p>
                 </div>
             </div>
         </div>
 
-        <button>Load more</button>
     </section>
 </div>
 {{-- shop section --}}

@@ -7,7 +7,7 @@
             @foreach ($comics as $comic)
             <div class="col-2 d-flex align-items-stretch pb-4">
                 <div class="card border-0" style="width: 100%;">
-                    <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
+                    <a href="{{route('guest.comics.show', $comic['id'])}}"><img src="{{ $comic['thumb'] }}" class="card-img-top" alt="..."></a>
                     <p class="card-text text-uppercase text-white pt-2"> {{$comic['title']}} </p>
                 </div>
             </div>
