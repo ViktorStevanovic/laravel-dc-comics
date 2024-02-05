@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="comics-wrapper">
-    <section class="comics-section container pt-4 d-flex justify-content-center">
+    {{-- <section class="comics-section container pt-4 d-flex justify-content-center">
         <div class="row">
 
             <div class="col-12 p-4">
@@ -14,6 +14,17 @@
             </div>
         </div>
 
+    </section> --}}
+    <section class="container text-white p-5 d-flex flex-column align-items-center">
+        <div>
+            <img src="{{ $comic['thumb'] }}" alt="..." class="mt-4">
+        </div>
+        <div class="text-center mt-5 mb-4">
+            <h1 class="m-0 mt-2">{{$comic['title']}} --- {{$comic['series']}}</h1>
+            <h2 class="mt-2 mb-4">Price: {{$comic['price']}}</h2>
+            <h4>Description:</h4>
+            <p class="m-0 mt-3">{{$comic['description']}}</p>
+        </div>
     </section>
 </div>
 {{-- shop section --}}
