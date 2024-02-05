@@ -1,13 +1,13 @@
 <header>
     <section class="container d-flex justify-content-between align-items-center">
         <section class="logo">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC comics main logo">
+            <a href="{{route('pages.home')}}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC comics main logo"></a>
         </section>
         <section class="navigation">
             <nav class="navbar-nav navbar-light">
                 <ul class="d-flex gap-5 text-uppercase list-unstyled m-0">
                     <li>Characters</li>
-                    <li class="active">Comics</li>
+                    <a href="{{route('guest.comics.index')}}"><li class="active">Comics</li></a>
                     <li>Movies</li>
                     <li>Tv</li>
                     <li>Games</li>
