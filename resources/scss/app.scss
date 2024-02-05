@@ -1,1 +1,142 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.logo{
+    padding: .5rem;
+}
+.logo img{
+    width: 75px;
+}
+.navigation li{
+    padding: 2rem 0;
+}
+.active{
+    border-bottom: 3px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.jumbotron{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position:top;
+    }
+}
+.comics-wrapper{
+    background-color: #1C1C1C;
+}
+
+.card{
+    background-color: #1C1C1C;
+    img{
+        height: 194px;
+        object-fit: cover;
+        object-position: top;
+    }
+    p{
+        font-size: .9rem;
+    }
+}
+button{
+    text-align: center;
+    border: none;
+    background-color: cornflowerblue;
+    text-transform: uppercase;
+    padding: .65rem 4rem;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+.shop{
+    background-color: cornflowerblue;
+    img{
+        width: 20%;
+    }
+    p{
+        font-size: .85rem;
+    }
+}
+
+// FOOTER STYLE
+footer{
+    width: 100%;
+    .upper-footer{
+        width: 100%;
+        background-image: url('../img/footer-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        .wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .footer-logo{
+            width: 50%;
+            max-height: 420px;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .footer-nav{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            padding: 2rem 0;
+            h2{
+                margin-bottom: .75rem;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+            li{
+                color:gray;
+                margin-bottom: .25rem;
+
+            }
+            
+        }
+        // .footer-logo{
+        //     // background-image: url('../assets/img/dc-logo-bg.png');
+        //     // width: 500px;
+        //     // height: 100%;
+        // }
+    }
+    .lower-footer{
+        background-color: #303030;
+        width: 100%;
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            background-color: #303030;
+            .sign-up{
+                button{
+                    border: 1px solid cornflowerblue;
+                    background-color: transparent;
+                    color: white;
+                    padding: .75rem 1rem;
+                    text-transform: uppercase;
+                    margin: auto;
+                }
+            }
+            .socials{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                h3{
+                    color: cornflowerblue;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+}

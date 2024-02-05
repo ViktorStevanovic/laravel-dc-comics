@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Guest\ComicController as GuestComicController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('pages.home');
+
+Route::get('/comics', [GuestComicController::class, 'index'])->name('guest.comics.index');
