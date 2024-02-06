@@ -16,6 +16,7 @@
                     <li>Fans</li>
                     <li>News</li>
                     <li>Shop</li>
+                    <a href="{{ route('guest.comics.create')}}"><li>Add Comic</li></a>
                 </ul>
             </nav>
         </section>

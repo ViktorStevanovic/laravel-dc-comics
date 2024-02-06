@@ -21,7 +21,7 @@
         </div>
         <div class="text-center mt-5 mb-4">
             <h1 class="m-0 mt-2">{{$comic['title']}} --- {{$comic['series']}}</h1>
-            <h2 class="mt-2 mb-4">Price: {{$comic['price']}}</h2>
+            <h2 class="mt-2 mb-4">Price: {{$comic['price']}}$</h2>
             <h4>Description:</h4>
             <p class="m-0 mt-3">{{$comic['description']}}</p>
         </div>
