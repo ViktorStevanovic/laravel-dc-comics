@@ -3,6 +3,7 @@
 @section('main-content')
 <div class="comics-wrapper">
     <section class="comics-section container pt-5 d-flex flex-column align-items-center">
+        <h1 class="text-white mb-5">Latest Comics</h1>
         <div class="row">
             @foreach ($comics as $comic)
             <div class="col-2 d-flex align-items-stretch pb-4">
@@ -13,7 +14,7 @@
             </div>
             @endforeach
         </div>
-        <button>Load more</button>
+        <button class="mb-5 mt-5">Load more</button>
     </section>
 </div>
 {{-- shop section --}}

@@ -3,6 +3,7 @@
 @section('main-content')
 
 <section class="p-5 container">
+    <h1 class="text-center">Add a new Comic Book</h1>
     <form action="{{ route('guest.comics.store') }}" method="POST">
         @csrf
         <div class="mb-3">
