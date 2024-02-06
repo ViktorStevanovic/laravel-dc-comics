@@ -7,7 +7,7 @@
             <nav class="navbar-nav navbar-light">
                 <ul class="d-flex gap-5 text-uppercase list-unstyled m-0">
                     <li>Characters</li>
-                    <a href="{{route('guest.comics.index')}}"><li class="active">Comics</li></a>
+                    <a href="{{route('guest.comics.index')}}"><li class="{{ ( Route::currentRouteName() == 'guest.comics.index') ? 'active' : '' }}">Comics</li></a>
                     <li>Movies</li>
                     <li>Tv</li>
                     <li>Games</li>
@@ -16,7 +16,7 @@
                     <li>Fans</li>
                     <li>News</li>
                     <li>Shop</li>
-                    <a href="{{ route('guest.comics.create')}}"><li>Add Comic</li></a>
+                    <a href="{{ route('guest.comics.create')}}"><li class="{{ ( Route::currentRouteName() == 'guest.comics.create') ? 'active' : '' }}">Add Comic</li></a>
                 </ul>
             </nav>
         </section>
