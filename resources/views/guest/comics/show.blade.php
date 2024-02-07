@@ -16,6 +16,7 @@
 
     </section> --}}
     <section class="container text-white p-5 d-flex flex-column align-items-center">
+        <a href="{{ route('guest.comics.edit', $comic)}}"><button type="submit" class="p-3 pe-5 ps-5 btn btn-warning">Modify comic</button></a>
         <div>
             <img src="{{ $comic['thumb'] }}" alt="..." class="mt-4">
         </div>
