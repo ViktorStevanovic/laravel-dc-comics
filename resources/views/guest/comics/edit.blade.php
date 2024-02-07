@@ -4,7 +4,7 @@
 
 <section class="p-5 container">
     <h1 class="text-center">Edit Comic Book</h1>
-    <form action="{{ route('guest.comics.update', ['id' => $comic->id]) }}" method="POST">
+    <form action="{{ route('guest.comics.update', $comic) }}" method="POST">
         @csrf
         @method('PUT')
         <div class="mb-3">

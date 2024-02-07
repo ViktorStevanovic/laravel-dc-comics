@@ -20,6 +20,6 @@ Route::get('/', function () {
 Route::get('/comics', [GuestComicController::class, 'index'])->name('guest.comics.index');
 Route::get('/comics/create', [GuestComicController::class, 'create'])->name('guest.comics.create');
 Route::post('/comics', [GuestComicController::class, 'store'])->name('guest.comics.store');
-Route::get('/comics/{id}', [GuestComicController::class, 'show'])->name('guest.comics.show');
-Route::get('/comics/{id}/edit', [GuestComicController::class, 'edit'])->name('guest.comics.edit');
-Route::put('/comics/{id}', [GuestComicController::class, 'update'])->name('guest.comics.update');
+Route::get('/comics/{comic}', [GuestComicController::class, 'show'])->name('guest.comics.show');
+Route::get('/comics/{comic}/edit', [GuestComicController::class, 'edit'])->name('guest.comics.edit');
+Route::put('/comics/{comic}', [GuestComicController::class, 'update'])->name('guest.comics.update');
